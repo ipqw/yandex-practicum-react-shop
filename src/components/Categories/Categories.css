@@ -1,0 +1,23 @@
+
+.category{
+    margin-top: 50px;
+    position: fixed;
+    z-index: 10;
+    margin-left: 40px;
+    padding: 20px;
+    width: 265px;
+    border-radius: 10px;
+    user-select: none;
+    height: 639px;
+    text-align: left;
+    background-color: #ffffff;
+}
+.category__text{
+    padding-bottom: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.category__active{
+    font-weight: 700;
+}
