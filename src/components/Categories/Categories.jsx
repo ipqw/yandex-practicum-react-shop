@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Categories.css'
 export const Categories = ({onChange}) => {
     const [activeFirst, setActiveFirst] = useState(false)
@@ -8,6 +8,10 @@ export const Categories = ({onChange}) => {
     const [activeFifth, setActiveFifth] = useState(false)
     const [activeSixth, setActiveSixth] = useState(false)
     const [activeSeventh, setActiveSeventh] = useState(false)
+
+    useEffect(() => {
+        changeFirst();
+      }, []);
 
     function changeFirst() {
         onChange('Художественная литература')
