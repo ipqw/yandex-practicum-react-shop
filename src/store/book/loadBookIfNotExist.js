@@ -7,7 +7,7 @@ export const loadBookIfNotExist = (dispatch, getState) => {
         return
     }
     dispatch(bookSlice.actions.startLoading())
-    fetch('http://localhost:3001/api/books')
+    fetch('https://shop-server-nyqa.vercel.app/api/books')
     .then((response) => response.json())
     .then(books => {
         dispatch(bookSlice.actions.successLoading(prepareData(books)))

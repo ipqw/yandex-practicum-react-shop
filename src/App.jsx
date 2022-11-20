@@ -17,7 +17,7 @@ function App() {
         <div className="App">
         <Header />
           <Routes>
-            <Route index element={<Catalog />}/>
+            <Route path='/react-shop' element={<Catalog />}/>
             <Route path='/book/:id' element={<Reviews />}/>
             <Route path='/cart' element={<Cart />}/>
           </Routes>

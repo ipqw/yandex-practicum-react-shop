@@ -7,7 +7,7 @@ export const loadReviewsIfNotExist = (dispatch, getState) => {
     //     return
     // }
     dispatch(reviewsSlice.actions.startLoading())
-    fetch('http://localhost:3001/api/reviews')
+    fetch('https://shop-server-nyqa.vercel.app/api/reviews')
     .then((response) => response.json())
     .then(reviews => {
         dispatch(reviewsSlice.actions.successLoading(prepareData(reviews)))
