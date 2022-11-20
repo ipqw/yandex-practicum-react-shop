@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { selectIsBooksLoading } from '../../store/book/selectors'
 import './Categories.css'
 export const Categories = ({onChange}) => {
     const [activeFirst, setActiveFirst] = useState(false)
@@ -9,9 +11,11 @@ export const Categories = ({onChange}) => {
     const [activeSixth, setActiveSixth] = useState(false)
     const [activeSeventh, setActiveSeventh] = useState(false)
 
+
+    const isLoading = useSelector((state) => selectIsBooksLoading(state))
     useEffect(() => {
         changeFirst();
-      }, []);
+      }, [isLoading]);
 
     function changeFirst() {
         onChange('Художественная литература')

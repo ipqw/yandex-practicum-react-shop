@@ -1,6 +1,5 @@
 .movie{
     background-color: #ffffff;
-    width: 895px;
     height: 216px;
     display: flex;
     justify-content: space-between;
@@ -33,6 +32,10 @@
     align-self: flex-start;
     text-align: left;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
 }
 .annotation{
     display: none;
