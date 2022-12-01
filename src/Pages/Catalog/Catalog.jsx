@@ -40,11 +40,11 @@ export const Catalog = (props) => {
 
 
     return(
-        <>
+        <div className='align'>
             <Categories onChange={handleNameChange}/>
             <div className='catalog'>
                 {render}
             </div>
-        </>
+        </div>
     )
 }

@@ -1,13 +1,14 @@
 .block{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .order{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 20px;
-    width: 347px;
+    margin-bottom: 20px;
+    width: 500px;
     min-height: 398px;
     max-height: 500px;
     background-color: #ffffff;
@@ -59,4 +60,21 @@
 .order__list-price{
     font-weight: 700;
     white-space: nowrap;
+}
+@media  screen and (min-width: 960px){
+    .order{
+        width: 793px;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .block {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .order{
+        width: 347px;
+        margin-right: 20px;
+    }
 }
