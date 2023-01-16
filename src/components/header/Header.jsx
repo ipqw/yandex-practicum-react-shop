@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom'
 import classes from'./Header.module.css'
+import cartImg from '../../images/cart.png'
 
-export const Header = ({setData}) => { 
+
+
+export const Header = () => { 
 
     return (
         <header className={classes.wrapper}>
-            <h1 onClick={setData} className={classes.shop}>Магазин</h1>
-            <button className={classes.cart}><img src="#" alt="cart"/></button>
+            <Link to='/' className={classes.shop}>Магазин</Link>
+            <Link to='/cart' className={classes.cart}><img src={cartImg} alt="cart"/></Link>
         </header>
     )
 }

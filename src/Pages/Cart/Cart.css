@@ -1,0 +1,80 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 500px;
+    min-height: 398px;
+    max-height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.order__btn{
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    width: 79px;
+    height: 34px;
+    font-weight: 500;
+    padding: 6px 12px 8px 12px;
+    color: #ffffff;
+    background-color: #000000;
+}
+.order__btn:hover{
+    background-color: #161616;
+}
+.order__sum{
+    font-size: 20px;
+    font-weight: 700;
+}
+.order__buy{
+    display: flex;
+    justify-content: space-between;
+}
+.order__list{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.order__list-h2{
+    padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.order__list-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+.order__list-book{
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: space-between;
+}
+.order__list-price{
+    font-weight: 700;
+    white-space: nowrap;
+}
+@media  screen and (min-width: 960px){
+    .order{
+        width: 793px;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .block {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .order{
+        width: 347px;
+        margin-right: 20px;
+    }
+}
