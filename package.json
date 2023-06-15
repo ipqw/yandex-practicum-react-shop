@@ -1,7 +1,7 @@
 {
   "name": "cinema-app",
   "version": "0.1.0",
-  "homepage": "https://ipqw.github.io/react-shop/",
+  "homepage": "https://github.com/ipqw/yandex-practicum-react-shop",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
